@@ -1,0 +1,29 @@
+CATATAN
+
+1. Setup npm
+    => create package.json
+        npm init -y
+
+    => Node-postgres for database:
+        npm i pg
+
+    => create file .gitignore
+        node_modules
+
+2. Setup directory
+    => config
+        file : connection.js
+        detail : start connection to database, import pg
+
+    => migrations
+        file : setup.js
+        detail : async function to drop (hard reset)
+            then create tables
+
+    => seeders
+        file : seed.js
+        detail : async function to insert pre-placed
+            data (if needed)
+
+
+3. Setup MVC
